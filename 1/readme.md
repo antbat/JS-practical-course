@@ -1,5 +1,5 @@
 # 1 Unit. Environment (1 day)
-* IDE (VSC or WebStorm) shortcuts keys,
+* IDE (VisualStudoCode or WebStorm) shortcuts keys,
 * run and debug JS code in web browsers Chrome, FF
 * NodeJS, npm,
 * ESlint
@@ -16,7 +16,7 @@ https://nodejs.org/en/
 https://code.visualstudio.com
 
 # Tasks
-1. Build local developing environment VSCode + git + NodeJS + NPM
+1. Build local developing environment VisualStudoCode + git + NodeJS + NPM
 2. Clone repository https://github.com/antbat/JS-practical-course.git
 3. Create own fork on GitHun ( e.g. Tatiana or Alex or Eugenij https://help.github.com/articles/fork-a-repo/ )
 4. Run and debug code unit 1
