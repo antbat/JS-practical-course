@@ -3,7 +3,7 @@
 */
 
 // output to console
-console.log('start here')
+console.log('start here');
 
 
-    console.log("stop here")
+console.log('stop here');
