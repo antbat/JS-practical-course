@@ -3,7 +3,15 @@
 */
 
 // output to console
-console.log('start here');
+console.log(' --- start here --- ');
+
+const a = true;
+console.log(a);
+
+const b = 'it is string';
+console.log(b);
+
+console.log(`let's combine string "${b}" and boolean ${a}`);
 
 
-console.log('stop here');
+console.log(' --- stop here --- ');
