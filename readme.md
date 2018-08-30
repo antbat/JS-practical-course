@@ -1,11 +1,12 @@
-# JS study programm
+# JS training program
 
-## 1 Unit
-* Environment (1 day)
+## 1 Unit Environment
 * IDE (VSC or WebStorm) shortcuts keys
-* NodeJS, npm, ESlint, editorConfig
+* NodeJS, npm,
+* ESlint,
+* EditorConfig
 * Git
-* Code reading
+* Code readable
 
 ## 2 Unit
 * Sync programming (2-3 days)
