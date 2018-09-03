@@ -31,7 +31,7 @@ https://learn.javascript.ru/exception
 
 ## Middle level task
 3. string validation "{{}}" valid , "{{}" invalid, "{}{}{}" valid, "}{}{" invalid, "{{}{}{}}" valid;
-4. find top10 from 1M huge array 
+4. find top10 from 1M huge array. This array must be generated from random 0...1000 and print duration (sec)
 
 ## Advances level tasks
 5. Generate random data pattern: { lang: 'ru/en/fr', title: '1-3 words', description: '1-20 words', price: '12.34$ / usd or 12 UAN, RUB, 0.45 FR'}
