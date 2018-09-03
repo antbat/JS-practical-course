@@ -12,10 +12,9 @@ const b = 'it is string';
 console.log(b);
 
 console.log(`let's combine string "${b}" and boolean ${a}`);
+const e = 5;
+var c = a + b - e;
 
-let c = a + b;
-
-console.log(c);
 
 c = 1;
 
