@@ -25,6 +25,15 @@
 https://learn.javascript.ru/types-intro
 https://learn.javascript.ru/exception
 
-## Tasks
+## Simple level tasks
 1. study again primitive JS type + exception
 2. write code with exception and handle this situation ( number, string, objects)
+
+## Middle level task
+3. string validation "{{}}" valid , "{{}" invalid, "{}{}{}" valid, "}{}{" invalid, "{{}{}{}}" valid;
+4. find top10 from 1M huge array 
+
+## Advances level tasks
+5. Generate random data pattern: { lang: 'ru/en/fr', title: '1-3 words', description: '1-20 words', price: '12.34$ / usd or 12 UAN, RUB, 0.45 FR'}
+6. Parsing data #5
+
