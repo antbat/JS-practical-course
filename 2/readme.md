@@ -23,6 +23,8 @@
 
 ## Links for studing
 https://learn.javascript.ru/types-intro
+https://learn.javascript.ru/exception
 
 ## Tasks
-1. 
+1. study again primitive JS type + exception
+2. write code with exception and handle this situation ( number, string, objects)
