@@ -1,12 +1,14 @@
 # 2 Unit. Data Code Complexity (2-3 days)
 ### data
-* let const var
+* const
 * boolean
 * string
 * number
 * object
-* null, undefined
 * array
+* undefined null
+* null, undefined
+
 ### code
 * if then
 * for while

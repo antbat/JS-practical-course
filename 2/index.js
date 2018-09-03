@@ -73,6 +73,6 @@ const offer = {
 let one;
 console.log(one);
 console.log(x + one);
-const m = 'qwerty'.match(/[aeiou]/gi);
+const m = 'qwertyQw'.match(/q/gi);
 
 console.log('finish');
