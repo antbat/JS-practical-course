@@ -16,5 +16,7 @@ const e = 5;
 var c = a + b - e;
 
 
+c = 1;
+
 
 console.log(' --- stop here --- ');
