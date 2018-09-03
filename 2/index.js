@@ -7,7 +7,7 @@ const b = false;
 const c = a || b;
 const d = a && b;
 
-console.log(c);
+console.log(c, d);
 
 // number
 
@@ -26,7 +26,7 @@ const first = 'first string';
 const second = 'second string';
 
 const result = first + second;
-
+console.log(result);
 
 const str1 = 'qwerty';
 const str2 = 'qwerty';
