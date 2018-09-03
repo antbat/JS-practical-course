@@ -15,6 +15,6 @@ console.log(`let's combine string "${b}" and boolean ${a}`);
 const e = 5;
 var c = a + b - e;
 
-console.log(c);
+
 
 console.log(' --- stop here --- ');
