@@ -1,30 +1,5 @@
 console.log('---start---');
 
-
-// try {
-
-//     const shedule = offer.schedule[2];
-//     console.log(shedule);
-//     const finishing = shedule.finish;
-//     console.log(finishing);
-
-// } catch (err) {
-//     console.log('this is no working time');
-//     console.error(err);
-// }
-
-// null, undefined; variables
-
-let x = 1;
-let one;
-console.log(one);
-console.log(x + one);
-const m = 'qwertyQw'.match(/q/gi);
-console.log(m);
-
-console.log('--- finish ---');
-
-
 const a1 = 5;
 const b1 = 10;
 
@@ -74,7 +49,6 @@ function stringValidation(str){
     }    
     return false;   
 };
-
 console.log(stringValidation(str));
 
-//fdnghkjdfhbn
+console.log('--- finish ---');
