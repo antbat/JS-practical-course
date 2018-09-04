@@ -45,7 +45,7 @@ try{
 
 try{
     const obj1 = {name:Ivan, age:25};
-    console.logobj1[2]
+    console.log(obj1[2])
 }catch(error){
     console.log(error.name + ': error: "Ivan" - it is not a variable')
 };
