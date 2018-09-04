@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    try {
+    var sayHi = 'Hi there',
+        sayBye = 'Cya'; //these var's returns 'string' HI or Bye 
+    var YOU_FINE = 'You fine?'; //added the constant for our prompt 
+    var askVisitor = prompt(YOU_FINE, 'Y/N');
+APPLE
+    alert(askVisitor); //my the most first js alert
+
+    /*
+Checking if our visitor fine we sayHi, otherwise sayBye (Another comment-using demo) 
+      */
+    if (askVisitor == 'Y') {
+      alert(sayHi);
+    } else {
+      alert(sayBye);
+    };
+  } catch(err) {
+    alert('Error ' + err.name + err.message);
+  };
+  </script>
+</body>
+
+</html>
