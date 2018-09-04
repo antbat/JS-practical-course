@@ -1,0 +1,19 @@
+{
+  "name": "js-practical-course",
+  "version": "1.0.0",
+  "description": "* IDE (VSC or WebStorm) shortcuts keys\r * NodeJS, npm,\r * ESlint,\r * EditorConfig\r * Git\r * Code readable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antbat/JS-practical-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antbat/JS-practical-course/issues"
+  },
+  "homepage": "https://github.com/antbat/JS-practical-course#readme"
+}
