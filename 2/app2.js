@@ -41,7 +41,6 @@ const maxVal = getMaxValue(hugeArray);
 function getTop10(hugeArray){
     let top10 = [];
 
-
     for (let n = 0; n < maxVal; n++){ 
 
         if (top10.length < 10){       
@@ -59,7 +58,6 @@ function getTop10(hugeArray){
 
  let top10 = getTop10(hugeArray);
  console.log('Top10:'  + (top10.length) + ': ' +  top10);
-
 
 
 var t1 = performance.now();

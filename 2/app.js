@@ -21,9 +21,9 @@ function generateArray(arrSize, min, max){
 let hugeArray = generateArray(arrSize, min, max);
 // console.log('hugeArray:' + (hugeArray.length)+ ': ' + hugeArray);
 
-
 const {performance} = require('perf_hooks');
 var t0 = performance.now();
+
 
     function compareNumeric(a, b) {
         return a - b;
@@ -39,7 +39,6 @@ function findTop10(){
         top10.push(sortedHugeArray[i])
     }
     return top10
-
 }
 
  console.log(findTop10());
