@@ -4,15 +4,27 @@
 */
 
 const min = 5;
-const max = 100;
-const size = 10000;
+const max = 1000;
+const size = 10000000;
 
-console.log('hi!');
+let timer;
+
+function start(){
+    const now = new Date();
+    timer = now.getTime();
+    console.log('start');
+}
+function finish(){
+    const now = new Date();
+    const interval = now.getTime() - timer;
+    console.log(`interval is ${ interval / 1000} sec`);
+}
 
 function generateRandomArray(size, min, max){
     const randomArray = [];
     for (let i=0; i<size; i++) {
-        randomArray.push(randomElement(min, max));
+        const element = randomElement(min, max);
+        randomArray.push(element);
     }
     return randomArray;
 }
@@ -21,6 +33,14 @@ function randomElement(min, max){
     return Math.round(Math.random() * max * 100 + min) / 100;
 }
 
-const data = generateRandomArray(size, min, max);
+try {
+    start();
+    const data = generateRandomArray(size, min, max);
+    finish();
+    console.log(`Array ${data.length} was created`);
+} catch(err){
+    console.error(err);
+}
 
-console.log(data.length);
+
+
