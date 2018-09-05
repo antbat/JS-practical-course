@@ -1,50 +1,29 @@
-/**
- * string validator
- * string contains only two type of character '{' and '}'
- * "{{}}" valid ,
- * "{{}" invalid,
- * "{}{}{}" valid,
- * "}{}{" invalid,
- * "{{}{}{}}" valid;
- */
-
-function validation(x){
-    // последовательно просмотреть все символы один  за другим
-    // 1, 2, 3, 4, ....
-    // если у нас длина строки нечетная, тогда сразу invalid
-    // введем счетчик и если { тогда мы его увеличиваем, если } тогда уменьшаем
-    return true;
-}
-
-const validatedData = '{{}';
-const isValid = validation(validatedData);
-console.log(`"${validatedData}" is Valid ? "${isValid}"`);
-
-
-
 console.log('--- start  ---');
 
-const {performance} = require('perf_hooks');
-var t0 = performance.now();
+// This array must be generated from random 0...1000
+const arrSize = 1e7;  //1e3 – это 1 с 3 нулями, то есть 1000.
+const min = 0;
+const max = 1e4;
 
-//This array must be generated from random 0...1000
-let hugeArray = generateArray();
-
-function generateArray(){
-    var arr = [];
-    for (let i = 0; i <  10000000; i++ ){       
-        arr.push(randomInteger(0,  10000000));
+function generateArray(arrSize, min, max){
+    let arr = [];
+    for (let i = 0; i < arrSize; i++ ){       
+        arr.push(randomInteger(min, max));
     }
     return arr;    
 };
-    
+
     function randomInteger(min, max) {
-        var rand;
-        rand = min + Math.random() * (max - min)
-        rand = Math.round(rand);
-        return rand;
+        var rand = min + Math.random() * (max - min);         
+        return Math.round(rand);
     } 
-// console.log(hugeArray);
+
+let hugeArray = generateArray(arrSize, min, max);
+// console.log('hugeArray:' + (hugeArray.length)+ ': ' + hugeArray);
+
+
+const {performance} = require('perf_hooks');
+var t0 = performance.now();
 
     function compareNumeric(a, b) {
         return a - b;
@@ -63,7 +42,7 @@ function findTop10(){
 
 }
 
-// console.log(findTop10());
+ console.log(findTop10());
 
 
 var t1 = performance.now();
