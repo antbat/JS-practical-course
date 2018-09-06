@@ -35,15 +35,19 @@
 * Real life coding (4-5 days)
 * Modules. Code size. Comments.
 * Reading code written by another developer.
-* Experiance of reading big external projects or libraray.
+* Experiance of reading big external projects or libraray.( Mongoose, request, elasticsearch )
 
 ## 7 Unit Angular. 
 * TypeScript (2 days)
+routing,forms
 
 ## 8 Unit NodeJS. 
 * serverside coding. (2 days)
+RSS reading
 
 ## 9 Unit Project.
-* Self-made project (4-5 days)
+* Self-made real project (4-5 days)
+Catalog search + tags + tree + comments
+
 
 
