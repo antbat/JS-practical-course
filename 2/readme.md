@@ -36,4 +36,3 @@ https://learn.javascript.ru/exception
 ## Advances level tasksq
 5. Generate random data pattern: { lang: 'ru/en/fr', title: '1-3 words', description: '1-20 words', price: '12.34$ / usd or 12 UAN, RUB, 0.45 FR'}
 6. Parsing data #5
-

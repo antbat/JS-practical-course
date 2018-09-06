@@ -15,6 +15,12 @@
             "request": "launch",
             "name": "Launch 2 Unit app",
             "program": "${workspaceFolder}/2/top10.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch 3 Unit app",
+            "program": "${workspaceFolder}/3/app.js"
         }
     ]
 }
