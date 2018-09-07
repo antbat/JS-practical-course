@@ -1,5 +1,5 @@
 {
-    // Use IntelliSense to learn about possible attributes.
+    // Use IntelliSense to learn about possible attributes.а
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
@@ -15,13 +15,22 @@
             "type": "node",
             "request": "launch",
             "name": "Launch 2 Unit app",
+<<<<<<< HEAD
             "program": "${workspaceFolder}/2/app.js"
+=======
+            "program": "${workspaceFolder}/2/top10.js"
+>>>>>>> 2e62dd628cb1cee6872f526ad96d3e434abb1415
         },
         {
             "type": "node",
             "request": "launch",
+<<<<<<< HEAD
             "name": "L. Obj 2 Unit app",
             "program": "${workspaceFolder}/2/obj.js"
+=======
+            "name": "Launch 3 Unit app",
+            "program": "${workspaceFolder}/3/app.js"
+>>>>>>> 2e62dd628cb1cee6872f526ad96d3e434abb1415
         }
     ]
 }
