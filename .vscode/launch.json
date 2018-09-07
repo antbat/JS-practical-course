@@ -20,7 +20,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch 3 Unit app",
-            "program": "${workspaceFolder}/3/app.js"
+            "program": "${workspaceFolder}/3/app2.js"
         }
     ]
 }

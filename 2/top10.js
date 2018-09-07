@@ -32,12 +32,30 @@ function generateRandomArray(size, min, max){
 function randomElement(min, max){
     return Math.round(Math.random() * max * 100 + min) / 100;
 }
+Array.prototype.getTop10 = function(length = 10){
+    const top = new Array(length);
+    const last = length - 1;
+    this.forEach( e => {
+        if(e > top[last] || top[last] === undefined){
+            top[last] = e;
+            top.sort((a,b) => b - a);
+        }
+    });
+    return top;
+};
+
 
 try {
     start();
     const data = generateRandomArray(size, min, max);
     finish();
     console.log(`Array ${data.length} was created`);
+
+    start();
+    const top10 = data.getTop10();
+    finish();
+    console.log(top10);
+
 } catch(err){
     console.error(err);
 }
