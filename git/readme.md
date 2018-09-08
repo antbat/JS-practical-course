@@ -5,5 +5,6 @@
 2. git status
 3. git status -s(short)
 4. git diff 
-5. gut diff -staged (--cashed)
+5. gIt diff -staged (--cashed)
+6. git rm (--chashed)
 
