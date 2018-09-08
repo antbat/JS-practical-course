@@ -21,14 +21,29 @@ class Profiler {
         return delay;
     }
 }
-const timer = new Profiler();
+
+class Generator{
+    constructor(max, min, decimalPlaces) {
+        this.min = min;
+        this.max = max;
+        this.accuracy = decimalPlaces * 10;
+    }
+    generate(size){
+        const hugeData = [];
+        for(let i=0; i<size; i++){
+            hugeData.push(this._random);
+        }
+        return hugeData;
+    }
+    _random(){
+        const a = Math.random() * this.max + this.min;
+        const b = Math.round(a * this.accuracy) / this.accuracy
+        return b;
+    }
+}
 
 function generate(size, max, min){
-    const hugeData = [];
-    for(let i=0; i<size; i++){
-        hugeData.push(Math.random() * max + min);
-    }
-    return hugeData;
+
 }
 
 function top(data, size){
@@ -47,7 +62,7 @@ function top(data, size){
 }
 
 // here we start use declared function
-
+const timer = new Profiler();
 const data = generate(arrSize, max, min);
 timer.start();
 const rating = top(data, topSize);
