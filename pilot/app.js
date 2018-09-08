@@ -1,14 +1,21 @@
 
 // declaration
+const arrSize = 10000;
+const min = 1;
+const max = 100;
+const topSize = 10;
+
 let timer;
-function generate(size){
+
+function generate(size, max, min){
     const hugeData = [];
     for(let i=0; i<size; i++){
-        hugeData.push(Math.random()*100 + 1);
+        hugeData.push(Math.random() * max + min);
     }
     return hugeData;
 }
 function start(){
+    console.log('start')
     const now = new Date();
     timer = now.getTime();
 }
@@ -33,9 +40,9 @@ function top(data, size){
 }
 
 // here we start use declared function
-console.log('start');
-const data = generate(100);
+
+const data = generate(arrSize, max, min);
 start();
-top(10);
+top(data, topSize);
 const period = finish();
 console.log(`app has finished up ${period / 1000} sec`);
