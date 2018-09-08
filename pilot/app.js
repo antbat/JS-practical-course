@@ -2,7 +2,11 @@
 // declaration
 let timer;
 function generate(size){
-    return []
+    const hugeData = [];
+    for(let i=0; i<size; i++){
+        hugeData.push(Math.random()*100 + 1);
+    }
+    return hugeData;
 }
 function start(){
     const now = new Date();
