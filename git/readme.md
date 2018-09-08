@@ -8,3 +8,7 @@
 5. gIt diff -staged (--cashed)
 6. git rm (--chashed)
 
+## remote 
+7. git remote
+8. git remote show  
+
