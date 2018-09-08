@@ -17,8 +17,19 @@ function finish(){
     const delay = now.getTime() - timer;
     return delay;
 }
-function top(size){
-    return []
+function top(data, size){
+    const lastElementIndex = size - 1;
+    const top = new Array(size);
+
+    if(data && data.length > 0) {
+        data.forEach(element => {
+            if(element > data[lastElementIndex]){
+                data[lastElementIndex] = element;
+                data.sort((a, b) => b - a);
+            }
+        });
+    }
+    return top;
 }
 
 // here we start use declared function
