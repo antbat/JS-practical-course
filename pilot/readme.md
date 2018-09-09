@@ -2,4 +2,4 @@
 it's special project, which demonstrates the features of git - development:
 branches
 merges
-conflicts
+very hard conflicts
