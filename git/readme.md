@@ -21,12 +21,13 @@
 (en) https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
 
 ## Task
-1. write top10 function IN SEPARATE branches and then merge ones
+1. write top10 function IN SEPARATE branches 
     * main branch "<my-name>-pilot-development": main scenario without constant
     * branch: profiler
     * branch: generator 
     * branch: topCounter
-2. Make every feature from list in separate branch and merge
+2. and then merge ones
+3. Make every feature from list in separate branch and merge
     1. add constants
     2. make 3 part of code: declaration part, const setting part and applying function part
     3. refactoring Profiler as class
