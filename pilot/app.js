@@ -1,10 +1,5 @@
 
 // declaration
-const arrSize = 100000;
-const min = 1;
-const max = 100;
-const topSize = 10;
-
 class Profiler {
     constructor(deсimalPlaces = 3){
         this.accuracy = deсimalPlaces * 10;
@@ -28,10 +23,10 @@ class Generator{
         this.max = max;
         this.accuracy = decimalPlaces * 10;
     }
-    generate(size){
+    generateData(size){
         const hugeData = [];
         for(let i=0; i<size; i++){
-            hugeData.push(this._random);
+            hugeData.push(this._random());
         }
         return hugeData;
     }
@@ -40,10 +35,6 @@ class Generator{
         const b = Math.round(a * this.accuracy) / this.accuracy
         return b;
     }
-}
-
-function generate(size, max, min){
-
 }
 
 function top(data, size){
@@ -61,9 +52,19 @@ function top(data, size){
     return top;
 }
 
-// here we start use declared function
-const timer = new Profiler();
-const data = generate(arrSize, max, min);
+// settings
+const arrSize = 1000000;
+const min = 1;
+const max = 100;
+const topSize = 10;
+const decimalPlaces = 4;
+
+// create instance (objects)
+const timer = new Profiler(decimalPlaces);
+const generator = new Generator(max, min, decimalPlaces);
+
+// here we start use
+const data = generator.generateData(arrSize);
 timer.start();
 const rating = top(data, topSize);
 timer.finish();
