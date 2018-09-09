@@ -1,5 +1,5 @@
 # Medicine-Catalog architecture
-NodeJS
+NodeJS (express, mongoose, validator)
 SPA Angular ( server-side prerendering )
 MongoDB (major storage)
 Elasticsearch (search index)
