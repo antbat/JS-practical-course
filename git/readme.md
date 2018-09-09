@@ -12,8 +12,15 @@
 7. git remote
 8. git remote show  
 
-## Task
+## Branches
 
+## Links 
+(ru) screencast https://learn.javascript.ru/screencast/git
+(ru) https://ru.stackoverflow.com/questions/431520/Как-вернуться-откатиться-к-более-раннему-коммиту
+(ru) https://medium.com/@ABatickaya/шпаргалка-по-git-55eeea487676
+(en) https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
+
+## Task
 1. write top10 function IN SEPARATE branches and then merge ones
     * main branch "<my-name>-pilot-development": main scenario without constant
     * branch: profiler
