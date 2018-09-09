@@ -21,6 +21,12 @@
             "request": "launch",
             "name": "Launch 3 Unit app",
             "program": "${workspaceFolder}/3/app2.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Pilot",
+            "program": "${workspaceFolder}/pilot/app.js"
         }
     ]
 }
