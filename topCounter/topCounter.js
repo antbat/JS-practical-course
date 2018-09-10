@@ -19,11 +19,11 @@ function finish(){
     console.log('sec: ', delay / 1000);
     return delay;
 }
-function engine(data, size){
+function engine(data, size = 10){
     const top = new Array(size);
     const lastElementIndex = size - 1;
     data.forEach( e => {
-        if(e > top[lastElementIndex]) {
+        if(top[lastElementIndex] === undefined || e > top[lastElementIndex]) {
             top[lastElementIndex] = e;
             top.sort((a, b) => b - a);
         }
