@@ -4,26 +4,11 @@
 // 3. find top N=10 from different numbers
 // 4. merge all branches to main
 
-// class Timer{};
-// class HugeArrayRandom{};
-// class GetTop{};
+class Timer{};
+class HugeArrayRandom{};
+class GetTop{};
 
-
-const hugeArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 14, 15, 15];
-
-class Timer{
-    Start(){
-        const now = new Date();            
-        this.timer = now.getMilliseconds();
-        return now;
-    }
-    timeDelay(){
-        const now = new Date();      
-        const timeDelay = now.getMilliseconds() - this.timer
-        return timeDelay;
-    }
-}
-
+<<<<<<< HEAD
 class HugeArrayRandom{ //to create random huge array
     constructor(arrSize, min, max){
         this.arrSize = arrSize;
@@ -39,13 +24,11 @@ class HugeArrayRandom{ //to create random huge array
         }
         return arr;    
     };    
-
-    _randomInteger() {
+        _randomInteger() {
         var rand = Math.round(this.min + Math.random() * (this.max - this.min));         
         return Math.round(rand);
     } 
 }
-
 class GetTop{
     constructor(hugeArray){
         this.hugeArray = hugeArray;
@@ -72,7 +55,6 @@ class GetTop{
                     value = this.hugeArray[i];           
                     if (n <= value && (value <= n) ){               
                         top10.push(value)
-                        break; 
                     }  
                 }       
             } 
@@ -81,7 +63,17 @@ class GetTop{
             console.log(err.name + 'something goes wrong')
         }    
         return top10
+=======
+class Timer{
+    Start(){
+        const now = new Date();            
+        this.timer = now.getMilliseconds();
+        return now;
+    }
+    timeDelay(){
+        const now = new Date();      
+        const timeDelay = now.getMilliseconds() - this.timer
+        return timeDelay;
+>>>>>>> Tatiana_main_timer
     }
 }
-const getTop = new GetTop(hugeArray);
-console.log(getTop.getTop10());
