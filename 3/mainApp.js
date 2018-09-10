@@ -4,9 +4,12 @@
 // 3. find top N=10 from different numbers
 // 4. merge all branches to main
 
-class Timer{};
-class HugeArrayRandom{};
-class GetTop{};
+// class Timer{};
+// class HugeArrayRandom{};
+// class GetTop{};
+
+
+const hugeArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 14, 15, 15];
 
 class GetTop{
     constructor(hugeArray){
@@ -34,6 +37,7 @@ class GetTop{
                     value = this.hugeArray[i];           
                     if (n <= value && (value <= n) ){               
                         top10.push(value)
+                        break; 
                     }  
                 }       
             } 
@@ -44,3 +48,5 @@ class GetTop{
         return top10
     }
 }
+const getTop = new GetTop(hugeArray);
+console.log(getTop.getTop10());
