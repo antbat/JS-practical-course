@@ -54,7 +54,6 @@ class  Worker{
     //     set fullName(newValue) {
     //         [this.firstName, this.lastName] = newValue.split(' ');
     //     }
-
 }
 var worker1 = new Worker('Иван', 'Иванов', 100, 20);
 console.log(worker1.getSalary());
