@@ -4,7 +4,12 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
+        {
+        "type": "node",
+            "request": "launch",
+            "name": "HOMEWORK 3 Unit app",
+            "program": "${workspaceFolder}/3/App2_hw.js"
+        },
         {
             "type": "node",
             "request": "launch",
@@ -15,11 +20,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch 2 Unit app",
-<<<<<<< HEAD
-            "program": "${workspaceFolder}/2/app.js"
-=======
             "program": "${workspaceFolder}/2/top10.js"
->>>>>>> 2e62dd628cb1cee6872f526ad96d3e434abb1415
         },
         {
             "type": "node",
@@ -29,8 +30,18 @@
             "program": "${workspaceFolder}/2/obj.js"
 =======
             "name": "Launch 3 Unit app",
+<<<<<<< HEAD
             "program": "${workspaceFolder}/3/app.js"
 >>>>>>> 2e62dd628cb1cee6872f526ad96d3e434abb1415
+=======
+            "program": "${workspaceFolder}/3/app2_hw.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Pilot",
+            "program": "${workspaceFolder}/pilot/app.js"
+>>>>>>> 37a5205de350d87c608c574a26d8f4813ed30855
         }
     ]
 }
