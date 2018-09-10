@@ -11,40 +11,6 @@
 
 const hugeArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 14, 15, 15];
 
-class Timer{
-    Start(){
-        const now = new Date();            
-        this.timer = now.getMilliseconds();
-        return now;
-    }
-    timeDelay(){
-        const now = new Date();      
-        const timeDelay = now.getMilliseconds() - this.timer
-        return timeDelay;
-    }
-}
-
-class HugeArrayRandom{ //to create random huge array
-    constructor(arrSize, min, max){
-        this.arrSize = arrSize;
-        this.min = min;
-        this.max = max;
-        // this.randomInteger = randomInteger(); - this will make ReferenceError
-    }
-
-    generateHugeArray(){
-        let arr = [];
-        for (let i = 0; i < this.arrSize; i++ ){       
-            arr.push(this._randomInteger());
-        }
-        return arr;    
-    };    
-
-    _randomInteger() {
-        var rand = Math.round(this.min + Math.random() * (this.max - this.min));         
-        return Math.round(rand);
-    } 
-}
 
 class GetTop{
     constructor(hugeArray){
@@ -62,13 +28,14 @@ class GetTop{
     };
 
     getTop10(){
+        const ten = 10;
         const maxVal = this.getMaxVal(this.hugeArray);
         let top10 = [];
         var value;
         try{
-            for (let n = maxVal; n > 0  &&  top10.length < 10; n--){ 
-                // if (top10.length == 10) break;            
-                for (let i = 0; i < this.hugeArray.length && top10.length < 10; i++){      
+            for (let n = maxVal; n > 0  &&  top10.length < ten; n--){ 
+                // if (top10.length == ten) break;            
+                for (let i = 0; i < this.hugeArray.length && top10.length < ten; i++){      
                     value = this.hugeArray[i];           
                     if (n <= value && (value <= n) ){               
                         top10.push(value)
