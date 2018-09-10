@@ -1,6 +1,8 @@
 /**/node_modules
 .idea
 .vscode/launch.json
+1/launch.jsons
+2/launch.json
 3/launch.json
 3/mainApp_REMOTE_9548.js
 3/mainApp_LOCAL_9548.js
