@@ -8,3 +8,15 @@ class Timer{}
 class HugeArrayRandom{}
 class GetTop{}
 
+class Timer{
+    Start(){
+        const now = new Date();            
+        this.timer = now.getMilliseconds();
+        return now;
+    }
+    timeDelay(){
+        const now = new Date();      
+        const timeDelay = now.getMilliseconds() - this.timer
+        return timeDelay;
+    }
+}
