@@ -8,8 +8,10 @@
 // class HugeArrayRandom{};
 // class GetTop{};
 
+const arrSize = 100000;  //consts for class HugeArrayRandom
+const min = 0;
+const max = 100; 
 
-const hugeArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 14, 15, 15];
 
 class Timer{
     Start(){
@@ -83,6 +85,22 @@ class GetTop{
         return top10
     }
 }
+const timer = new Timer();
+timer.Start();
+
+const hugeArrayRandom = new HugeArrayRandom(arrSize, min, max);
+const hugeArray = hugeArrayRandom.generateHugeArray();
+console.log(hugeArrayRandom.generateHugeArray());
+
+
 const getTop = new GetTop(hugeArray);
 console.log(getTop.getTop10());
+
+
+timer.timeDelay();
+
+
+console.log('timeDelay: ' + timer.timeDelay() + ' Milliseconds');
+
+
 
