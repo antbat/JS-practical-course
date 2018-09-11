@@ -46,7 +46,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch GIT_HW",
-            "program": "${workspaceFolder}/9/hw_git.js"
+            "program": "${workspaceFolder}/git/hw_git.js"
 
         }
     ]
