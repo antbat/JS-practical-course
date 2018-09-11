@@ -1,4 +1,4 @@
-
+"use strict"
 // declaration
 class Profiler {
     constructor(deсimalPlaces = 3){
@@ -26,15 +26,25 @@ class Generator{
     generateData(size){
         const hugeData = [];
         for(let i=0; i<size; i++){
-            hugeData.push(_random());
+            hugeData.push(let = _random  = () => {
+            const a = Math.random() * this.max + this.min;
+            const b = Math.round(a * this.accuracy);
+            return b;
+            });
         }
         return hugeData;
 
-        function _random() {
-            const a = Math.random() * this.max + this.min;
-            const b = Math.round(a * this.accuracy) / this.accuracy
-            return b;
-        }
+        // _random = () => {
+        //     const a = Math.random() * this.max + this.min;
+        //     const b = Math.round(a * this.accuracy);
+        //     return b;
+        // }
+        
+        // function _random() {
+        //     const a = Math.random() * this.max + this.min;
+        //     const b = Math.round(a * this.accuracy) / this.accuracy
+        //     return b;
+        // }
     }
 
 }
