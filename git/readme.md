@@ -34,5 +34,6 @@
     4. refactoring Generator as class
     5. refactoring TopCounter as class
     6. add error protection (try catch and conditions for function parameters validation)
+    7. top N have to contain unique elements ( 1..1000 )
 
 
