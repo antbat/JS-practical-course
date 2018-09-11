@@ -27,6 +27,18 @@
             "request": "launch",
             "name": "Launch Pilot",
             "program": "${workspaceFolder}/pilot/app.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Async app ( Anton)",
+            "program": "${workspaceFolder}/4/app.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Closure app ( Anton)",
+            "program": "${workspaceFolder}/4/closure.js"
         }
     ]
 }

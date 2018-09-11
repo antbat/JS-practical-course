@@ -26,15 +26,17 @@ class Generator{
     generateData(size){
         const hugeData = [];
         for(let i=0; i<size; i++){
-            hugeData.push(this._random());
+            hugeData.push(_random());
         }
         return hugeData;
+
+        function _random() {
+            const a = Math.random() * this.max + this.min;
+            const b = Math.round(a * this.accuracy) / this.accuracy
+            return b;
+        }
     }
-    _random(){
-        const a = Math.random() * this.max + this.min;
-        const b = Math.round(a * this.accuracy) / this.accuracy
-        return b;
-    }
+
 }
 
 function top(data, size){
