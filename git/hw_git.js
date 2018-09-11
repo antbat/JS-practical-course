@@ -14,11 +14,11 @@ class ArrayMaker {
 
     }
     _numRandomizer(){
-        return Math.round(Math.random()*this.max + this.min);
+        return Math.round(Math.random() * max * 100 + min) / 100;
     }
 }
 
-
+//Timer
 class Timer {
     constructor(isSec){
         this.isSec = isSec;
@@ -38,11 +38,28 @@ class Timer {
 
 }
 
+//Rator
+class Rator {
+    constructor(top, inputArray){
+        this.topSize = top;
+        this.inputArray = inputArray;
+    }
+    top(){
+        const output =  new Array(this.topSize);
+        return output;
+    }
+
+}
+
+//Program Usage
 const timerSec = new Timer(true);
 const timerMs = new Timer(false);
-const arrayMaker = new ArrayMaker (1000000);
+const arrayMaker = new ArrayMaker (100);
 // console.log(arrayMaker);
 const array1 = arrayMaker.createArray();
+const rator = new Rator (10, array1);
+const ratorResult = rator.top();
+console.log(ratorResult);
 // console.log(array1);
 
 try {
