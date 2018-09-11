@@ -14,7 +14,8 @@ class ArrayMaker {
 
     }
     _numRandomizer(){
-        return Math.round(Math.random() * max * 100 + min) / 100;
+        let rand = Math.round(Math.random()*this.max + this.min);
+        return rand;
     }
 }
 
@@ -40,13 +41,31 @@ class Timer {
 
 //Rator
 class Rator {
-    constructor(top, inputArray){
+    constructor(top = 10, inputArray){
         this.topSize = top;
         this.inputArray = inputArray;
     }
-    top(){
-        const output =  new Array(this.topSize);
-        return output;
+    _maxVal(){
+        let max =  this.inputArray[0];
+            for (let i = 0; i < this.inputArray.length; i++) {
+                if (max < this.inputArray[i]){
+                    max = this.inputArray[i] ;
+                }                           
+            }
+        return max;
+    }
+    getTop(){
+        const max = this._maxVal(this.inputArray);
+        let topArr = [];
+        var val;
+        for (let j = max; j > 0 && topArr.length < top; n--){
+            for (let i = 0; i < this.inputArray.length && topArr.length <=top;
+                val = this.inputArray[i]);
+                if ((val <=n) && n <= val) {
+                    topArr.push(val);
+                }
+        }
+        return topArr;
     }
 
 }
@@ -54,11 +73,11 @@ class Rator {
 //Program Usage
 const timerSec = new Timer(true);
 const timerMs = new Timer(false);
-const arrayMaker = new ArrayMaker (100);
+const arrayMaker = new ArrayMaker ();
 // console.log(arrayMaker);
 const array1 = arrayMaker.createArray();
 const rator = new Rator (10, array1);
-const ratorResult = rator.top();
+const ratorResult = rator.getTop();
 console.log(ratorResult);
 // console.log(array1);
 
