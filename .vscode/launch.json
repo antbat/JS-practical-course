@@ -25,15 +25,14 @@
         {
             "type": "node",
             "request": "launch",
-<<<<<<< HEAD
+
             "name": "L. Obj 2 Unit app",
             "program": "${workspaceFolder}/2/obj.js"
-=======
+
             "name": "Launch 3 Unit app",
-<<<<<<< HEAD
+
             "program": "${workspaceFolder}/3/app.js"
->>>>>>> 2e62dd628cb1cee6872f526ad96d3e434abb1415
-=======
+
             "program": "${workspaceFolder}/3/app2_hw.js"
         },
         {
@@ -41,7 +40,14 @@
             "request": "launch",
             "name": "Launch Pilot",
             "program": "${workspaceFolder}/pilot/app.js"
->>>>>>> 37a5205de350d87c608c574a26d8f4813ed30855
+
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch GIT_HW",
+            "program": "${workspaceFolder}/9/hw_git.js"
+
         }
     ]
 }
