@@ -1,4 +1,2 @@
-/**/node_modules
-.idea
-.vscode/launch.json
-3/launch.json
+/**/node_modules/
+.idea/
