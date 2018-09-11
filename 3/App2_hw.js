@@ -18,6 +18,7 @@ class ArrayMaker {
     
 }
 
+
 class Timer {
     constructor(isSec){
         this.isSec = isSec;
@@ -38,7 +39,7 @@ class Timer {
 }
 
 const timerSec = new Timer(true);
-const timerMs = new Timer(true);
+const timerMs = new Timer(false);
 const arrayMaker = new ArrayMaker (1000000);
 // console.log(arrayMaker);
 const array1 = arrayMaker.createArray();
