@@ -56,7 +56,7 @@ class Rator {
     }
     getTop(){
         const max = this._maxVal(this.inputArray);
-        let topArr = [];
+        var topArr = [];
         var val;
         for (let j = max; j > 0 && topArr.length < top; n--){
             for (let i = 0; i < this.inputArray.length && topArr.length <=top;
@@ -67,7 +67,12 @@ class Rator {
         }
         return topArr;
     }
-
+    getUniqueTop(){
+        // var unique = topArr.filter((v , i, a) => a.indexOf(v) === i);
+        var uniqueItems = inputArray.from(new Set(inputArray));
+    console.log(uniqueItems);
+    }
+     
 }
 
 //Program Usage
@@ -78,6 +83,8 @@ const arrayMaker = new ArrayMaker ();
 const array1 = arrayMaker.createArray();
 const rator = new Rator (10, array1);
 const ratorResult = rator.getTop();
+const ratorUniqueResult = rator.getUniqueTop();
+console.log(ratorUniqueResult);
 console.log(ratorResult);
 // console.log(array1);
 
