@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "type": "node",
             "request": "launch",
@@ -25,19 +26,25 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Pilot",
+            "name": "training 4 (Tt)",
+            "program": "${workspaceFolder}/4/training.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "app pilot (Anton)",
             "program": "${workspaceFolder}/pilot/app.js"
         },
         {
             "type": "node",
             "request": "launch",
-            "name": "Async app ( Anton)",
+            "name": "Async app (Anton)",
             "program": "${workspaceFolder}/4/app.js"
         },
         {
             "type": "node",
             "request": "launch",
-            "name": "Closure app ( Anton)",
+            "name": "Closure app (Anton)",
             "program": "${workspaceFolder}/4/closure.js"
         }
     ]

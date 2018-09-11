@@ -1,6 +1,6 @@
 console.log('closure !!');
 
-// declaration
+// declaration (closure = замиканія)
 function closure(){
 
     let a = 0;
@@ -18,8 +18,6 @@ const one = closure();
 const two = closure();
 const third = closure();
 
-
-
 one();
 two();
 third();
@@ -28,16 +26,16 @@ console.log('-----');
 
 one();
 two();
-third();
+// third();
 
 console.log('-----');
 
 one();
-two();
-third();
+// two();
+// third();
 
 console.log('-----');
 
 one();
-two();
-third();
+// two();
+// third();
