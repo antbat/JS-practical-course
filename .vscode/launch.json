@@ -58,6 +58,12 @@
             "request": "launch",
             "name": "CallBack app ( Anton)",
             "program": "${workspaceFolder}/4/callback.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Promises app ( Evgen)",
+            "program": "${workspaceFolder}/4/Promises_examples.js"
         }
     ]
 }
