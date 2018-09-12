@@ -26,7 +26,7 @@ class Generator{
     }
 
     generateData(){        
-        var _random = (min, max) => {
+        var _random = () => {
             const a = Math.random() * this.max + this.min;
             const b = Math.round(a * this.accuracy) / this.accuracy
             return b;

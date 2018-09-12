@@ -26,7 +26,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "training 4 (Tt)",
+            "name": "training 4 (tt)",
             "program": "${workspaceFolder}/4/training.js"
         },
         {

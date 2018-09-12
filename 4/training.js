@@ -52,37 +52,36 @@ console.log('hi hi');
 // }
 // console.log(timesFour(5))
 
-const min = 1;
-const max = 100;
-const decimalPlaces = 4;
-const size = 100;
-
-class Generator{
-    constructor(max, min, decimalPlaces) {
-        this.min = min;
-        this.max = max;     
-        this.accuracy = decimalPlaces * 10;
-        this.size = size;
-    }
-
-    generateData(){        
-        var _random = (min, max) => {
-            const a = Math.random() * this.max + this.min;
-            const b = Math.round(a * this.accuracy) / this.accuracy
-            return b;
-        }
-
-        const hugeData = [];
-        for(let i=0; i < this.size; i++){
-            hugeData.push(_random());
-        }
-        return hugeData;
-    }
-}
-
-const generator = new Generator(max, min, decimalPlaces);
-// console.log(generator._random());
-console.log(generator.generateData());
 
 
+// function printNumbersInterval() {
+//     let i = 1;
+//     var timerId = setInterval(function() {
+//       console.log(i);
+//       if (i == 20) clearInterval(timerId);
+//       i++;
+//     }, 100);
+//   }
+//   printNumbersInterval();
+
+
+
+// var timerId = setTimeout(function tick() {
+//     alert( "тик" );
+//     timerId = setTimeout(tick, 2000);
+//   }, 2000);
+
+
+  function printNumbersInterval1() {
+    let i = 1;
+    setTimeout(function cons(){
+       
+        console.log(i);
+        if (i < 20)
+        setTimeout(cons, 100)
+        i++
+         
+    }, 100)
+  }
+  printNumbersInterval1();
 
