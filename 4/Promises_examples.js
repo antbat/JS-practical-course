@@ -32,12 +32,16 @@ function getReady(){
     console.log('Get pants and shirt steamed etc.');
     return console.log('We are ready to work,' + {});
 }
+try{
+    applyForJob({})
+        .then(approveApply)
+        .then(celebrate)
+        .then(getReady1)   //ERROR TEST (original .then(getReady))
+        .catch(error => console.error(error));
+} catch(err){
+    console.error(err);
+}
 
-applyForJob({})
-    .then(approveApply)
-    .then(celebrate)
-    .then(getReady)
-    .catch(error => console.error(error));
 
 
 //     function(approved){
