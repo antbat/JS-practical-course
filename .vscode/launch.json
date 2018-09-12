@@ -39,6 +39,12 @@
             "request": "launch",
             "name": "Closure app ( Anton)",
             "program": "${workspaceFolder}/4/closure.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "CallBack app ( Anton)",
+            "program": "${workspaceFolder}/4/callback.js"
         }
     ]
 }
