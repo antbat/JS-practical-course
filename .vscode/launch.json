@@ -27,9 +27,11 @@
             "request": "launch",
             "name": "L. Obj 2 Unit app",
             "program": "${workspaceFolder}/2/obj.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Launch 3 Unit app",
-
-            "program": "${workspaceFolder}/3/app.js"
             "program": "${workspaceFolder}/3/app2_hw.js"
         },
         {
@@ -50,7 +52,12 @@
             "request": "launch",
             "name": "Closure app ( Anton)",
             "program": "${workspaceFolder}/4/closure.js"
-
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "CallBack app ( Anton)",
+            "program": "${workspaceFolder}/4/callback.js"
         }
     ]
 }

@@ -36,7 +36,7 @@ one();
 two();
 third();
 
-console.log('-----');
+console.log('--Н--');
 
 one();
 two();
