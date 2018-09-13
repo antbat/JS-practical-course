@@ -46,6 +46,13 @@
             "request": "launch",
             "name": "Closure app (Anton)",
             "program": "${workspaceFolder}/4/closure.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "tt",
+            "program": "${workspaceFolder}/4/promise.js"
         }
+    ]
     ]
 }

@@ -72,16 +72,36 @@ console.log('hi hi');
 //   }, 2000);
 
 
-  function printNumbersInterval1() {
-    let i = 1;
-    setTimeout(function cons(){
+//   function printNumbersInterval1() {
+//     let i = 1;
+//     setTimeout(function cons(){
        
-        console.log(i);
-        if (i < 20)
-        setTimeout(cons, 100)
-        i++
+//         console.log(i);
+//         if (i < 20)
+//         setTimeout(cons, 100)
+//         i++
          
-    }, 100)
-  }
-  printNumbersInterval1();
+//     }, 100)
+//   }
+//   printNumbersInterval1();
 
+
+function first(y){
+    console.log('1')
+    y(2, 3);
+}
+
+function second(a, b){
+    console.log(a+b)
+}
+
+first(second);
+//  second(2, 5);
+
+
+var promise = new Promise(function(resolve, reject){
+
+})
+
+promise.then (onFulfilled, onRejected)
+promise.cath(onRejected)
