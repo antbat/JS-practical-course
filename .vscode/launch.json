@@ -50,7 +50,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "tt",
+ 	    "name": "tt",
             "program": "${workspaceFolder}/4/promise.js"
         }
     ]
