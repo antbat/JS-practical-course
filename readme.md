@@ -29,11 +29,12 @@
 * closures
 
 ## 5 Unit Testing (1 day)
+* Modules. Code size. Comments.
 * chai, mocha
 
 ## 6 Unit
 * Real life coding (4-5 days)
-* Modules. Code size. Comments.
+
 * Reading code written by another developer.
 * Experiance of reading big external projects or libraray.( Mongoose, request, elasticsearch )
 
