@@ -36,7 +36,7 @@ try{
     applyForJob({})
         .then(approveApply)
         .then(celebrate)
-        .then(getReady1)   //ERROR TEST (original .then(getReady))
+        .then(getReady)   //ERROR TEST (original .then(getReady))
         .catch(error => console.error(error));
 } catch(err){
     console.error(err);
