@@ -1,0 +1,38 @@
+1) изучите еще раз PROMISE (45 мин)
+2) по применяйте PROMISE (стройте свои асинхронные цепочки) ( > 2ч)
+    - передаете параметр: значение напрмер 1, 'some string', { data: 'some value'}
+    - передовать параметр:  promise
+    - обработка ошибок (15 мин)
+3) переизучить async/await
+4) написали свой класс с помощью async/await который бы генерировал поток случайных событий
+    например 100 раз через случайный интревал 0.01с  -  5с вызывал функцию (какую-то)
+
+
+    const times = 100;
+
+    comst minDelay = 100; // ms
+    const maxDelay = 5000; // 5sec
+
+    const minValue = 1;
+    const maxValue = 1000;
+
+    function myFunction(randomValue){
+        console.log(randomValue);
+    }
+
+    const stream = new AsyncStream(myFunction, times, minDelay, maxDelay, minValue, maxValue);
+
+    stream.start();
+
+    1
+    ...
+    2
+    ...
+    2000
+    ....
+    23
+    ..
+
+    5) topN ( например ТОП 10);
+
+
