@@ -1,31 +1,42 @@
-/**
-* it's a first program
-*/
 
-// output to console
-console.log(' --- start here --- ');
+ console.log(' --- start here --- ');
 
-const a = true;
-console.log(a);
+      
 
-const b = 'it is string';
-console.log(b);
+    class Timer {
+        constructor(time){
+            this.time = time;           
+        }
+
+        tick(){
+            this.time --  
+            console.log (this.time)          
+            return this.time
+        }
+
+    }
+    let timer = new Timer(60);
+    console.log(timer.tick());
+
+    const timerId = setInterval(function(){timer.tick()}, 1000);
 
 
-console.log(`let's combine string "${b}" and boolean ${a}`);
-let t=0;
-var t=5;
-console.log(t + '================');
-try{   
-    
-const c = {name: Ura, age:25};
-c = 1;
-'it may be many mistakes - but only one message from catch';
-const e = 16;
-var s = a + b - m;
-console.log(s)
 
-}catch(err){
-    console.log(err.name + ': _____something goes wrong');
-}
+
+// let time = 20;
+//     function tick(){        
+//         time--;
+//         console.log(time)        
+//     }
+//     // console.log(tick() + ' console.log(tick()'); 
+
+//     const timerId = setInterval(tick, 1000);
+
+// //   через 5 сек остановить повторы
+//   setTimeout(function() {
+//   clearInterval(timerId);
+//     console.log( 'стоп' );
+//   }, 5000);
+
+
 
