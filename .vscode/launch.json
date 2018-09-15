@@ -52,17 +52,24 @@
  	        "name": "4 promise - tt",
             "program": "${workspaceFolder}/4/promise.js"
         },
-        {
-            "type": "node",
-            "request": "launch",
- 	        "name": "4 myClass - tt",
-            "program": "${workspaceFolder}/4/myClass.js"
-        },
+     
         {
             "type": "node",
             "request": "launch",
  	        "name": "4 promise2 - tt",
             "program": "${workspaceFolder}/4/promise2.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+ 	        "name": "4 promise3 - tt",
+            "program": "${workspaceFolder}/4/promise3.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+ 	        "name": "4 promise4 - tt",
+            "program": "${workspaceFolder}/4/promise4.js"
         }
     ]
     
