@@ -31,11 +31,3 @@ class RandomNumericAsyncStream  {
 }
 
 module.exports = RandomNumericAsyncStream;
-
-// const doSmth = (data) => {
-//     console.log(`I hace got data = ${data}`);
-// };
-
-// const randomNumericAsyncStream = new RandomNumericAsyncStream(doSmth);
-
-// randomNumericAsyncStream.start();
