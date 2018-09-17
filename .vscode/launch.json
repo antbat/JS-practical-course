@@ -68,8 +68,14 @@
         {
             "type": "node",
             "request": "launch",
- 	        "name": "4 promise4 - tt",
+ 	        "name": "promise4 4 - tt",
             "program": "${workspaceFolder}/4/promise4.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+ 	        "name": "async 4 - tt",
+            "program": "${workspaceFolder}/4/async.js"
         }
     ]
     
