@@ -70,8 +70,8 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "promise experiment ( Anton)",
-            "program": "${workspaceFolder}/5/promises.js"
+            "name": "server1 - tt",
+            "program": "${workspaceFolder}/5/server1.js"
         }
     ]
 }
