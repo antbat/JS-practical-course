@@ -1,10 +1,13 @@
-const RandomNumericAsyncStream = require('./app');
-const chai = require('chai');
 
+const chai = require('chai');
 chai.should();
 
-describe('async flow', async () => {
-    it('should provide data "N" times', async () => {
+const RandomNumericAsyncStream = require('./app');
+
+describe('Random async flow', async () => {
+    it('should provide data "5" times', async () => {
+
+        // preparation
         const expectedCount = 5;
         let counter = 0;
         function incrementCounter(smth){
@@ -12,7 +15,13 @@ describe('async flow', async () => {
             counter++;
         }
         const randomNumericAsyncStream = new RandomNumericAsyncStream(incrementCounter, 5, 0, expectedCount);
+
+        // run tested method
         await randomNumericAsyncStream.start();
+
+        // check result
         counter.should.be.eql(expectedCount);
     });
 });
+
+
