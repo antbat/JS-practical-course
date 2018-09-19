@@ -1,10 +1,17 @@
 const express = require('express');
 const app = express();
+let counter = 1;
 
-app.get('/', function (req, res) {
-    res.send('hello world');
-});
+console.log('start here');
 
+function myRouter(req, res) {
+    const data = req.query.p;
+    console.log('I get request from web browser');
+    const now = new Date();
+    res.send(`${counter++}) I am working here !! now = ${now} data = ${data}`);
+}
+
+app.get('/123', myRouter);
 app.listen(3000);
 
-console.log('hi !');
+console.log('finish code here');

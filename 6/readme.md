@@ -5,7 +5,20 @@
 self study
 * JSON
 * XML
-* MongoDB JavaScript JSON
+* NodeJS, ExpressJS (req, res)
+* ( next lesson )MongoDB JavaScript JSON
+
+## links
+http://expressjs.com/en/4x/api.html#req
+http://learn.javascript.ru/screencast/nodejs
+1 часть
+1-19
+2 часть
+1 ExpressJS
+
+#Homework
+create 2-3 webserver (nodeJS + Express)
+
 
 # RSS reader
 
