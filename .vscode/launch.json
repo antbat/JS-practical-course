@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Server NODEJS",
+            "program": "${workspaceFolder}/6/app.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Launch 1 Unit app",
             "program": "${workspaceFolder}/1/index.js"
         },
