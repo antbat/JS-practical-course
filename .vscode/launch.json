@@ -8,17 +8,8 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Run Tests",
-            "program": "${workspaceFolder}/5/node_modules/mocha/bin/_mocha",
-            "args": [
-                "-u",
-                "tdd",
-                "--timeout",
-                "999999",
-                "--colors",
-                "${workspaceFolder}/5/*.test.js"
-            ],
-            "internalConsoleOptions": "openOnSessionStart"
+            "name": "Server NODEJS",
+            "program": "${workspaceFolder}/6/app.js"
         },
         {
             "type": "node",
