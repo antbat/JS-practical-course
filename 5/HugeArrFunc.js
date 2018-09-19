@@ -1,5 +1,9 @@
-module.exports = generateArray;
-module.exports = randomInteger;
+//module.exports = generateArray;
+module.exports = {
+    generateArray : generateArray,
+    findTop10 : findTop10,
+    randomInteger : randomInteger,
+};
 
 console.log('--- start  ---');
 
@@ -50,5 +54,14 @@ console.log(findTop10());
 var t1 = performance.now();
 console.log('to find top10 from generated huge 1k array took ' + (t1 - t0) + ' milliseconds.');
 
+
+function myArray()
+{
+    return{
+        randomInteger : randomInteger,
+        generateArray : generateArray,
+        findTop10 : findTop10
+    };
+}
 
 

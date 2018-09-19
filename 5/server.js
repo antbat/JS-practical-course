@@ -7,7 +7,7 @@ function run(){
     var petia = new User('Petia');
 
     vasya.hello(petia);
-    console.log(db.getPhrase('it works!!!'))
+    console.log(db.getPhrase('it works!!!'));
 }
 
 if(module.parent){
