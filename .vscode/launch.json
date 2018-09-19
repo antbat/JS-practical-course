@@ -7,8 +7,8 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Run Tests",
-            "program": "${workspaceFolder}/JS-practical-course-master/node_modules/mocha",
+            "name": "Mocha Tests",
+            "program": "${workspaceFolder}/5/node_modules/mocha/bin/_mocha",
             "args": [
                 "-u",
                 "tdd",

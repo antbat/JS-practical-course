@@ -31,3 +31,4 @@ class RandomNumericAsyncStream  {
 }
 
 module.exports = RandomNumericAsyncStream;
+exports._genarator = generator; // why undefined
