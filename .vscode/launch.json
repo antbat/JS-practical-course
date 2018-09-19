@@ -51,6 +51,18 @@
             "request": "launch",
             "name": "CallBack app ( Anton)",
             "program": "${workspaceFolder}/4/callback.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "async flow ( Anton)",
+            "program": "${workspaceFolder}/5/app.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "promise experiment ( Anton)",
+            "program": "${workspaceFolder}/5/promises.js"
         }
     ]
 }
