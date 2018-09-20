@@ -21,6 +21,10 @@ https://github.com/request/request#readme
 #Homework
 create 2-3 webserver (nodeJS + Express)
 
+split into modules
+error handling
+class wrapping
+
 
 # RSS reader
 
