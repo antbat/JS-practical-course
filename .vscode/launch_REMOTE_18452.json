@@ -4,13 +4,6 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Server NODEJS",
-            "program": "${workspaceFolder}/6/app.js"
-        },
         {
             "type": "node",
             "request": "launch",
@@ -46,36 +39,6 @@
             "request": "launch",
             "name": "Closure app ( Anton)",
             "program": "${workspaceFolder}/4/closure.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "CallBack app ( Anton)",
-            "program": "${workspaceFolder}/4/callback.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "async flow ( Anton)",
-            "program": "${workspaceFolder}/5/app.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "server1 - tt",
-            "program": "${workspaceFolder}/5/server1.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "HugeArrFunc.test - tt",
-            "program": "${workspaceFolder}/5/HugeArrFunc.test.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "simpleApp.test - ( Anton)",
-            "program": "${workspaceFolder}/5/simpleApp.test.js"
         }
     ]
 }

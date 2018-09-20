@@ -20,23 +20,24 @@ class Profiler {
 class Generator{
     constructor(max, min, decimalPlaces) {
         this.min = min;
-        this.max = max;
+        this.max = max;     
         this.accuracy = decimalPlaces * 10;
+        this.size = arrSize;
     }
-    generateData(size){
-        const hugeData = [];
-        for(let i=0; i<size; i++){
-            hugeData.push(_random());
-        }
-        return hugeData;
 
-        function _random() {
+    generateData(){        
+        var _random = () => {
             const a = Math.random() * this.max + this.min;
             const b = Math.round(a * this.accuracy) / this.accuracy
             return b;
         }
-    }
 
+        const hugeData = [];
+        for(let i=0; i < this.size; i++){
+            hugeData.push(_random());
+        }
+        return hugeData;
+    }
 }
 
 function top(data, size){
@@ -55,7 +56,7 @@ function top(data, size){
 }
 
 // settings
-const arrSize = 1000000;
+const arrSize = 20;
 const min = 1;
 const max = 100;
 const topSize = 10;
@@ -64,6 +65,7 @@ const decimalPlaces = 4;
 // create instance (objects)
 const timer = new Profiler(decimalPlaces);
 const generator = new Generator(max, min, decimalPlaces);
+console.log(generator.generateData());
 
 // here we start use
 const data = generator.generateData(arrSize);
