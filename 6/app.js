@@ -1,4 +1,8 @@
 const express = require('express');
+const request = require('request');
+const parseString = require('xml2js').parseString;
+
+
 const app = express();
 let counter = 1;
 
@@ -13,5 +17,15 @@ function myRouter(req, res) {
 
 app.get('/123', myRouter);
 app.listen(3000);
+
+// #1 get data
+request.get('https://www.rbc.ua/static/rss/all.rus.rss.xml', (error, data) => {
+    // error handling
+    const xml = data.body;
+    console.log(xml);
+    parseString(xml, function (err, result) {
+        console.dir(result);
+    });
+});
 
 console.log('finish code here');

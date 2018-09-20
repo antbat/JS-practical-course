@@ -15,9 +15,15 @@ http://learn.javascript.ru/screencast/nodejs
 1-19
 2 часть
 1 ExpressJS
+https://github.com/Leonidas-from-XIV/node-xml2js
+https://github.com/request/request#readme
 
 #Homework
 create 2-3 webserver (nodeJS + Express)
+
+split into modules
+error handling
+class wrapping
 
 
 # RSS reader
