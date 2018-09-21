@@ -19,13 +19,35 @@ app.get('/123', myRouter);
 app.listen(3000);
 
 // #1 get data
-request.get('https://www.rbc.ua/static/rss/all.rus.rss.xml', (error, data) => {
-    // error handling
-    const xml = data.body;
-    console.log(xml);
-    parseString(xml, function (err, result) {
-        console.dir(result);
+try {
+    request.get('https://www.rbc.ua/static/rss/all.rus.rss.xml', (error, data) => {
+        // error handling
+        if (error){
+            console.error(error + '- error!!! in request.get');        
+        }
+        else if (data.statusCode == 404){
+            console.error(error + '- error 404!!! in request.get');    
+        }
+        else{
+            const xml = data.body;
+            console.log(xml);
+            parseString(xml, function (err, result) {
+                if (err){
+                    console.error(error + '- error!!! in data parsing');        
+                }
+                else{
+                    console.dir(result);
+                }
+            });
+        }
     });
-});
+} catch(error) {
+    console.error(error + '- error!!! in request.get or data parsing'); 
+}
 
 console.log('finish code here');
+
+
+ 
+  
+ 
