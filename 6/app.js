@@ -1,6 +1,9 @@
 const express = require('express');
-const request = require('request');
-const parseString = require('xml2js').parseString;
+const ReadRss = require('./readRss.class.js');
+
+const RBK = require('./RSS/RBK/rbk.settings');
+const Korrespondent = require('./RSS/Korrespondent/Korrespondenr.settings');
+const Facts = require('./RSS/Facts/facts.settings');
 
 
 const app = express();
@@ -15,39 +18,29 @@ function myRouter(req, res) {
     res.send(`${counter++}) I am working here !! now = ${now} data = ${data}`);
 }
 
-app.get('/123', myRouter);
+app.get('/', myRouter);
 app.listen(3000);
 
-// #1 get data
-try {
-    request.get('https://www.rbc.ua/static/rss/all.rus.rss.xml', (error, data) => {
-        // error handling
-        if (error){
-            console.error(error + '- error!!! in request.get');        
-        }
-        else if (data.statusCode == 404){
-            console.error(error + '- error 404!!! in request.get');    
-        }
-        else{
-            const xml = data.body;
-            console.log(xml);
-            parseString(xml, function (err, result) {
-                if (err){
-                    console.error(error + '- error!!! in data parsing');        
-                }
-                else{
-                    console.dir(result);
-                }
-            });
-        }
-    });
-} catch(error) {
-    console.error(error + '- error!!! in request.get or data parsing'); 
-}
+
+setTimeout( async () =>{
+    // URLS error
+    const rssReaderRBK = new ReadRss(RBK);
+    await rssReaderRBK.getData();
+}, 1000);
+
+setTimeout( async () =>{
+    // init error
+    // const rssReaderFacts = new ReadRss();
+    const rssReaderFacts = new ReadRss(Facts);
+    await rssReaderFacts.getData();
+}, 10000);
+
+setTimeout( async () =>{
+    // error free
+    const rssReaderKorrespondent = new ReadRss(Korrespondent);
+    await rssReaderKorrespondent.getData();
+}, 5000);
+
+
 
 console.log('finish code here');
-
-
- 
-  
- 
