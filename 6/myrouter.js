@@ -5,4 +5,4 @@ function myRouter(req, res) {
     const now = new Date();
     res.send(`${counter++}) I am working here !! now = ${now} data = ${data}`);
 }
-module.exports.myRouter = myRouter;
+exports.myRouter = myRouter;

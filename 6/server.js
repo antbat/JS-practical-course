@@ -1,8 +1,9 @@
 const request = require('./getData');
+// const parseString = require('./getData');
+const myRouter = require('./myrouter');
 const express = require('express');
 // const request = require('request');
-const parseString = require('./getData');
-const myRouter = require('./myrouter');
+
 // const parseString = require('xml2js').parseString;
 
 

@@ -10,4 +10,4 @@ request.get('https://www.rbc.ua/static/rss/all.rus.rss.xml', (error, data) => {
 });
 
 exports.request = request;
-exports.parseString = parseString;
+// exports.parseString = parseString;
