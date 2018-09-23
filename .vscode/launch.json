@@ -9,6 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Server NODEJS",
+<<<<<<< HEAD
             "program": "${workspaceFolder}/6/server.js"
         },
         {
@@ -16,6 +17,9 @@
             "request": "launch",
             "name": "Server NODEJS_Evg",
             "program": "${workspaceFolder}/Evg_servers/app.js"
+=======
+            "program": "${workspaceFolder}/6/toUseAppClass.js"
+>>>>>>> 03ee5fbbede761b77a39e95424956b73656705b1
         },
         {
             "type": "node",

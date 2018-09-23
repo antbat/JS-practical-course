@@ -47,3 +47,20 @@ create SPA AngularJS:
 4) Korrespondent
 
 all SPA pages display last 100 feeds
+
+
+RUS:
+Clacc ReadRss должен реализовывать такое поведение:
+1) получили данные (async)
+2) превратить из XML в JSON (async)
+3) нужно вытащить все статьи и сделать из них массив (sync)
+4) нужно каждую статья обработать и перевести во внутренний еслиный для всех истояников формат (sync)
+
+callBack
+promise
+async/await
+
+Домашнее задание:
+сделайте свои ветки от unit6-nodejs-rss
+напишите сначал на callBack
+на async/await
