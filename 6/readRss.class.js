@@ -1,5 +1,9 @@
 const request = require('request');
 const parseString = require('xml2js').parseString;
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/rssArticles');
+
 
 class ReadRss {
     constructor(settings){
@@ -11,6 +15,13 @@ class ReadRss {
         const xml = await this._getDataFromExternalSource();
         const json = await this._parseToJson(xml);
         const article = await this._separateToArticles(json);
+
+        if (article && article.length > 0) {
+            const max = article.length;
+            for(let i=0; i<max; i++) {
+                await this._saveArticleToMongoDb(article[i]);
+            } 
+        }
 
         // #1 parsing
 
