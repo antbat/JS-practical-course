@@ -1,13 +1,16 @@
 const request = require('request');
+const parseString = require('xml2js').parseString;
 
 class ReadRss {
     constructor(settings){
         this.url = settings && settings.url || '';
     }
-    async getData(){
+    async dataProcess(){
         // #1 get data
 
         const xml = await this._getDataFromExternalSource();
+        const json = await this._parseToJson(xml);
+        const article = await this._separateToArticles(json);
 
         // #1 parsing
 
@@ -38,6 +41,28 @@ class ReadRss {
                 }
             });
         });
+    }
+    async _parseToJson(data) {
+        return new Promise ((resolve, reject) => {
+            parseString(data, function (error, result){
+                console.dir(result); 
+                
+                if (error){
+                    reject(error);
+                } else {
+                    resolve(result);
+                }
+
+            });
+        });
+    }
+
+    _separateToArticles(json){
+        return[];
+    }
+    
+    async _saveArticleToMongoDb(article) {
+        return new Promise ((resolve, reject) =>{});
     }
 }
 

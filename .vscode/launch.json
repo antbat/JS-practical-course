@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Server NODEJS",
-            "program": "${workspaceFolder}/6/toUseAppClass.js"
+            "program": "${workspaceFolder}/6/app.js"
         },
         {
             "type": "node",

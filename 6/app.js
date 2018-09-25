@@ -25,20 +25,20 @@ app.listen(3000);
 setTimeout( async () =>{
     // URLS error
     const rssReaderRBK = new ReadRss(RBK);
-    await rssReaderRBK.getData();
+    await rssReaderRBK.dataProcess();
 }, 1000);
 
 setTimeout( async () =>{
     // init error
     // const rssReaderFacts = new ReadRss();
     const rssReaderFacts = new ReadRss(Facts);
-    await rssReaderFacts.getData();
+    await rssReaderFacts.dataProcess();
 }, 10000);
 
 setTimeout( async () =>{
     // error free
     const rssReaderKorrespondent = new ReadRss(Korrespondent);
-    await rssReaderKorrespondent.getData();
+    await rssReaderKorrespondent.dataProcess();
 }, 5000);
 
 

@@ -21,6 +21,7 @@
     "mocha": "^5.2.0"
   },
   "dependencies": {
+    "mongoose": "^5.2.17",
     "request": "^2.88.0"
   }
 }
