@@ -53,7 +53,6 @@ class ReadRss {
 
             });
         });
-
     }
 
     _separateToArticles(data){

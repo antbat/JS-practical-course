@@ -1,5 +1,5 @@
 const express = require('express');
-const ReadRss = require('./readRss2.class.js');
+const ReadRss = require('./readRss1.class.js');
 
 const RBK = require('./RSS/RBK/rbk.settings');
 // const Korrespondent = require('./RSS/Korrespondent/Korrespondenr.settings');
@@ -17,7 +17,6 @@ function myRouter(req, res) {
     const now = new Date();
     res.send(`${counter++}) I am working here !! now = ${now} data = ${data}`);
 }
-
 app.get('/', myRouter);
 app.listen(3000);
 
@@ -25,8 +24,9 @@ app.listen(3000);
 setTimeout( async () =>{
     // URLS error
     const rssReaderRBK = new ReadRss(RBK);
-    await rssReaderRBK.getData();
-}, 1000);
+    await rssReaderRBK.dataProcess();
+    console.log(rssReaderRBK.dataProcess());
+}, 100);
 
 // setTimeout( async () =>{
 //     // init error
@@ -42,11 +42,11 @@ setTimeout( async () =>{
 // }, 3000);
 
 
-const jsonReadRss = new ReadRss(RBK);
+// const jsonReadRss = new ReadRss(RBK);
 
-jsonReadRss.parseJson().then(
-    result => {console.log("Fulfilled: " + result)},
-    error => console.log("Rejected: " + error.message)
-  );
+// jsonReadRss._separateToArticles().then(
+//     result => {console.log("Fulfilled: " + result)},
+//     error => console.log("Rejected: " + error.message)
+// );
 
 console.log('finish code here');
