@@ -1,5 +1,11 @@
 const request = require('request');
 const parseString = require('xml2js').parseString;
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/rss');
+
+const RSS = mongoose.model('article', {
+    title: String
+});
 
 class ReadRss {
     constructor(settings, parseString){
