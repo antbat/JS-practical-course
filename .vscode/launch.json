@@ -4,12 +4,11 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-    
         {
             "type": "node",
             "request": "launch",
             "name": "Server NODEJS",
-            "program": "${workspaceFolder}/6/app.js"
+            "program": "${workspaceFolder}/6/createDb.js"
         },
         {
             "type": "node",
@@ -76,6 +75,12 @@
             "request": "launch",
             "name": "simpleApp.test - ( Anton)",
             "program": "${workspaceFolder}/5/simpleApp.test.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "MONGOOSE",
+            "program": "${workspaceFolder}/6/DB_practice/index.js"
         }
     ]
 }
