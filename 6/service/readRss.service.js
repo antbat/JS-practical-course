@@ -1,12 +1,8 @@
+
 const request = require('request');
 const parseString = require('xml2js').parseString;
-const mongoose = require('mongoose');
+const Article = require('./../model/article.model');
 
-mongoose.connect('mongodb://localhost/rss');
-
-const RSS = mongoose.model('article', {
-    title: String
-});
 
 class ReadRss {
     constructor(settings){
@@ -83,14 +79,27 @@ class ReadRss {
     }
 
     async _saveArticlesToMonoDB(article){
-        const rss = new RSS({ title: article.title });
-        try {
-            const savedArticle = await rss.save();
-            console.log(savedArticle);
-        } catch(err){
-            console.log(err);
-        }
+        if (article) {
 
+            const articlesInDb = await Article.find({title: article.title});
+
+            if( articlesInDb && articlesInDb.length ) {
+                console.log(`article was written with title "${article.title}"`);
+            } else {
+                console.log(`it's new article "${article.title}"`);
+                const rss = new Article({
+                    title: article.title,
+                    description: article.description,
+                    link: article.link && article.link.length && article.link[0] || ''
+                });
+                try {
+                    await rss.save();
+                    return;
+                } catch(err){
+                    console.log(err);
+                }
+            }
+        }
         return;
     }
 }
