@@ -1,0 +1,6 @@
+{
+    "port": 3020,
+    "mongodb": {
+        "connection": "mongodb://localhost/rss-production"
+    }
+}
