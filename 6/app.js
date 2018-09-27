@@ -1,9 +1,12 @@
 const express = require('express');
-const ReadRss = require('./readRss.class.js');
+const ReadRss = require('./service/readRss.service.js');
 
 const RBK = require('./RSS/RBK/rbk.settings');
 const Korrespondent = require('./RSS/Korrespondent/Korrespondenr.settings');
 const Facts = require('./RSS/Facts/facts.settings');
+
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/rss');
 
 
 const app = express();
@@ -13,13 +16,16 @@ console.log('start here');
 
 function myRouter(req, res) {
     const data = req.query.p;
+
     console.log('I get request from web browser');
     const now = new Date();
+    // get all articles from DB
+    // send ones to browser
     res.send(`${counter++}) I am working here !! now = ${now} data = ${data}`);
 }
 
 app.get('/', myRouter);
-app.listen(3000);
+app.listen(3010);
 
 
 setTimeout( async () =>{
