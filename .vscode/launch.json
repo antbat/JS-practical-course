@@ -9,7 +9,13 @@
             "type": "node",
             "request": "launch",
             "name": "Server NODEJS",
-            "program": "${workspaceFolder}/6/app1.js"
+            "program": "${workspaceFolder}/6/app.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "6/createDb.js",
+            "program": "${workspaceFolder}/6/createDb.js"
         },
         {
             "type": "node",

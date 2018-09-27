@@ -21,7 +21,6 @@
 // var cat1 = new Kitten({name: 'Kot1', age: 1});
 // console.log(cat1.name);
 
-
 const mongoose = require('mongoose');
  
 mongoose.connect('mongodb://localhost/test', function (err) {
@@ -30,7 +29,7 @@ mongoose.connect('mongodb://localhost/test', function (err) {
 }, { useNewUrlParser: true });
 
 var authorSchema = mongoose.Schema({
-    // _id: mongoose.Schema.Types.ObjectId,
+    _id: mongoose.Schema.Types.ObjectId,
     name: {
         firstName: String,
         lastName: String
@@ -44,32 +43,17 @@ var authorSchema = mongoose.Schema({
     }
 });
 
-var bookSchema = mongoose.Schema({
-    // _id: mongoose.Schema.Types.ObjectId,
-    title: String,    
-    // author: { 
-    //     type: mongoose.Schema.Types.ObjectId, 
-    //     ref: 'Author'
-    // },
-
-    created: { 
-        type: Date,
-        default: Date.now
-    }
-});
-
 var Author = mongoose.model('Author', authorSchema);
- 
-var Book = mongoose.model('Book', bookSchema);
 
-var author1 = new Author({
-    // _id: new mongoose.Schema.Types.ObjectId(),
+var author1 = new Author({    
+    _id: new mongoose.Types.ObjectId(),
     name:{
         firstName:'Ton', 
         lastName:'Verg'
     },
     biography: 'born in Kiev',    
-    facebook: 'https://www.facebook.com'
+    facebook: 'https://www.facebook.com',
+    created: new Date()
 });
 
 author1.save(function(err){
@@ -79,8 +63,25 @@ author1.save(function(err){
 
 console.log(author1.name);
 
+
+
+var bookSchema = mongoose.Schema({
+    _id: mongoose.Schema.Types.ObjectId,
+    title: String,    
+    // author: { 
+    //     type: mongoose.Schema.Types.ObjectId, 
+    //     ref: 'Author'
+    // },
+    created: { 
+        type: Date,
+        default: Date.now
+    }
+});
+
+var Book = mongoose.model('Book', bookSchema);
+
 var book1 = new Book ({
-// _id: mongoose.Schema.Types.ObjectId,
+    _id: new mongoose.Types.ObjectId(),
     title: 'Ton Boooook',    
     // author: { 
     //     type: mongoose.Schema.Types.ObjectId, 
@@ -98,3 +99,14 @@ book1.save(function(err){
     else 
         console.log('book1.save - book1 successfully saved.');
 });
+
+Book.find({
+    title: 'Ton Boooook'
+}).limit(5)
+    .sort('-created')
+
+    .exec(function(err, books) {
+        if (err) throw err;
+     
+        console.log(books);
+    });
