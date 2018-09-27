@@ -42,7 +42,7 @@ class ReadRss {
                     console.log(error);
                 } else {
                     const xml = data.body;
-                    console.dir(xml);
+                    // console.dir(xml);
                     resolve(xml);
                 }
             });

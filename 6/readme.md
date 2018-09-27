@@ -32,7 +32,11 @@ http://learn.javascript.ru/screencast/nodejs 4,5
 3) создайте несколько своих моделей, запищите данны е затем прочитайте
 4) возвращайтесь к нашему примеры и добавьте логику: проверять перед записью в БД нет ли там уже существующей записи с таким же title
 
-
+October 1, Homework:
+1) add some new RSS sources
+2) make MongoDB and get connection string from mlab (https://mlab.com)
+3) create Heroku (https://devcenter.heroku.com/articles/getting-started-with-nodejs) 
+4) run your app on Heroku NodeJS (AWS)
 # RSS reader
 
 RSS data sources:
