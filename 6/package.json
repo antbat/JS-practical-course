@@ -4,7 +4,8 @@
   "description": "* Real life coding (4-5 days) * Experiance of reading big external projects or libraray.( Mongoose, request )",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,4 +18,4 @@
     "request": "^2.88.0",
     "xml2js": "^0.4.19"
   }
-}
+ }
