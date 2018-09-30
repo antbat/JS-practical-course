@@ -7,10 +7,6 @@
         {
             "type": "node",
             "request": "launch",
-<<<<<<< HEAD
-            "name": "Server NODEJS",
-            "program": "${workspaceFolder}/6/createDb.js"
-=======
             "name": "Server NODEJS (dev mode)",
             "program": "${workspaceFolder}/6/app.js",
             "env": {
@@ -25,7 +21,6 @@
             "env": {
                 "NODE_ENV": "production"
             }
->>>>>>> 09c8ad22cb641e9db88b9d56f77d3fb336c527e6
         },
         {
             "type": "node",

@@ -12,6 +12,7 @@
     "eslint": "^5.6.0"
   },
   "dependencies": {
+    "config": "^2.0.1",
     "express": "^4.16.3",
     "mongodb": "^3.1.6",
     "mongoose": "^5.2.17",

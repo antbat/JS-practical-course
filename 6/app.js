@@ -11,6 +11,8 @@ const mongodb = config.get('mongodb');
 const RBK = require('./RSS/RBK/rbk.settings');
 const Korrespondent = require('./RSS/Korrespondent/Korrespondenr.settings');
 const Facts = require('./RSS/Facts/facts.settings');
+const Habr = require('./RSS/HABR/habr.settings');
+const F_science = require('./RSS/Facty_Science/f_science.settings');
 
 const mongoose = require('mongoose');
 mongoose.connect(mongodb.connection);
@@ -48,6 +50,11 @@ setTimeout( async () =>{
 }, 1000);
 
 setTimeout( async () =>{
+    const rssReaderFacty_science = new ReadRss(F_science);
+    await rssReaderFacty_science.dataProcess();
+}, 3000);
+
+setTimeout( async () =>{
     // init error
     // const rssReaderFacts = new ReadRss();
     const rssReaderFacts = new ReadRss(Facts);
@@ -59,6 +66,11 @@ setTimeout( async () =>{
     const rssReaderKorrespondent = new ReadRss(Korrespondent);
     await rssReaderKorrespondent.dataProcess();
 }, 5000);
+
+setTimeout( async () =>{
+    const rssReaderHabr = new ReadRss(Habr);
+    await rssReaderHabr.dataProcess();
+}, 15000);
 
 
 
