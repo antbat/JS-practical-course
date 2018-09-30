@@ -1,7 +1,7 @@
 {
     "port": 3020,
     "mongodb": {
-        "connection": "mongodb://admin:vaqci1-tUgryf-viqnak@ds115553.mlab.com:15553/coursejs"
+        "connection": "mongodb://eugene:Maine186@ds115523.mlab.com:15523/rss_db"
 
 
     }
