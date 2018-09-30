@@ -4,7 +4,7 @@
   "description": "* Real life coding (4-5 days) * Experiance of reading big external projects or libraray.( Mongoose, request )",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "app.js"
   },
   "author": "",
   "license": "ISC",
