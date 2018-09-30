@@ -2,6 +2,9 @@
   "name": "@antbat/6",
   "version": "1.0.0",
   "description": "* Real life coding (4-5 days) * Experiance of reading big external projects or libraray.( Mongoose, request )",
+  "engines": {
+    "node": "8.9.1"
+  },
   "main": "app.js",
   "scripts": {
     "start": "app.js"
