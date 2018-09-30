@@ -1,19 +1,24 @@
 {
-  "name": "js-practical-course",
+  "name": "@antbat/6",
   "version": "1.0.0",
-  "description": "* IDE (VSC or WebStorm) shortcuts keys\r * NodeJS, npm,\r * ESlint,\r * EditorConfig\r * Git\r * Code readable",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "* Real life coding (4-5 days) * Experiance of reading big external projects or libraray.( Mongoose, request )",
+  "engines": {
+    "node": "8.9.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/antbat/JS-practical-course.git"
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/antbat/JS-practical-course/issues"
+  "devDependencies": {
+    "eslint": "^5.6.0"
   },
-  "homepage": "https://github.com/antbat/JS-practical-course#readme"
+  "dependencies": {
+    "config": "^2.0.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.17",
+    "request": "^2.88.0",
+    "xml2js": "^0.4.19"
+  }
 }
