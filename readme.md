@@ -1,54 +1,77 @@
-# JS training program
-
-## 1 Unit Environment
-* IDE (VSC or WebStorm) shortcuts keys
-* NodeJS, npm,
-* ESlint,
-* EditorConfig
-* Git
-* Code readable
-
-## 2 Unit Sync programming (2-3 days)
-* simple types (number, string, boolean, null, undefined)
-* var, let, const. How to name variables
-* objects
-* if then ?: switch
-* while, fora
-* sync exceptions try catch
-* function, parameters
-* array (filter, map, forEach,...)
-
-## 3 Unit Sync programming OOP patterns ( 4-5 days)
-* classes, this
-
-## 4 Unit Async programming (4-5 days)
-* callbacks
-* promises
-* async/await
-* async exceptions try catch
-* closures
-
-## 5 Unit Testing (1 day)
-* Modules. Code size. Comments.
-* chai, mocha
-
-## 6 Unit
+# Unit 6
 * Real life coding (4-5 days)
+* Experiance of reading big external projects or libraray.( Mongoose, request )
 
-* Reading code written by another developer.
-* Experiance of reading big external projects or libraray.( Mongoose, request, elasticsearch )
+self study
+* JSON
+* XML
+* NodeJS, ExpressJS (req, res)
+* ( next lesson )MongoDB JavaScript JSON
 
-## 7 Unit Angular. 
-* TypeScript (2 days)
-routing,forms
+## links
+http://expressjs.com/en/4x/api.html#req
+http://learn.javascript.ru/screencast/nodejs
+1 часть
+1-19
+2 часть
+1 ExpressJS
+https://github.com/Leonidas-from-XIV/node-xml2js
+https://github.com/request/request#readme
 
-## 8 Unit NodeJS. 
-* serverside coding. (2 days)
-RSS reading
+#Homework
+create 2-3 webserver (nodeJS + Express)
 
-## 9 Unit Project.
-* Self-made real project (4-5 days)
-Catalog search + tags + tree + comments
+split into modules
+error handling
+class wrapping
+
+September 25, Homework:
+1) изучить документацию и примеры  MongoDB
+http://learn.javascript.ru/screencast/nodejs 4,5
+2) напишите несколько своих примеров для записи в БД и затем чтение данных
+3) создайте несколько своих моделей, запищите данны е затем прочитайте
+4) возвращайтесь к нашему примеры и добавьте логику: проверять перед записью в БД нет ли там уже существующей записи с таким же title
+
+October 1, Homework:
+1) add some new RSS sources
+2) make MongoDB and get connection string from mlab (https://mlab.com)
+3) create Heroku (https://devcenter.heroku.com/articles/getting-started-with-nodejs) 
+4) run your app on Heroku NodeJS (AWS)
+# RSS reader
+
+RSS data sources:
+* https://www.rbc.ua/static/rss/all.rus.rss.xml
+* https://fakty.ua/rss_feed/all
+* http://k.img.com.ua/rss/ru/all_news2.0.xml
+
+create NODE.js app:
+1. reading RSS (every 60 seconds)
+2. convert XML to JSON
+2. put data to DB (MongoDB)
+3. static: Single Page Application (WEB page) Angular 6 
+
+create SPA AngularJS:
+
+1) main page: all RSS 
+2) RBC page
+3) Facti Page
+4) Korrespondent
+
+all SPA pages display last 100 feeds
 
 
+RUS:
+Clacc ReadRss должен реализовывать такое поведение:
+1) получили данные (async)
+2) превратить из XML в JSON (async)
+3) нужно вытащить все статьи и сделать из них массив (sync)
+4) нужно каждую статья обработать и перевести во внутренний еслиный для всех истояников формат (sync)
 
+callBack
+promise
+async/await
+
+Домашнее задание:
+сделайте свои ветки от unit6-nodejs-rss
+напишите сначал на callBack
+на async/await
