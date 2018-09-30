@@ -52,7 +52,7 @@ class ReadRss {
     async _parseToJson(data){
         return new Promise( (resolve, reject) => {
             parseString(data, function (err, result) {
-                console.dir(result);
+                //console.dir(result);
                 if(err){
                     reject(err);
                 } else {
@@ -84,9 +84,9 @@ class ReadRss {
             const articlesInDb = await Article.find({title: article.title});
 
             if( articlesInDb && articlesInDb.length ) {
-                console.log(`article was written with title "${article.title}"`);
+                //console.log(`article was written with title "${article.title}"`);
             } else {
-                console.log(`it's new article "${article.title}"`);
+                //console.log(`it's new article "${article.title}"`);
                 const rss = new Article({
                     title: article.title,
                     description: article.description,
@@ -96,7 +96,7 @@ class ReadRss {
                     await rss.save();
                     return;
                 } catch(err){
-                    console.log(err);
+                    console.error(err);
                 }
             }
         }
