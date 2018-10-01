@@ -1,4 +1,4 @@
 module.exports = {
     url: 'https://news.finance.ua/ua/rss',    
-    encoding: null
+    encoding: 'windows-1251'
 };

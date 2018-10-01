@@ -55,25 +55,25 @@ setTimeout( async () =>{
     await rssReaderFinance.dataProcess();
 }, 100);
 
+
 setTimeout( async () =>{
     // URLS error
     const rssReaderRBK = new ReadRss(RBK);
     await rssReaderRBK.dataProcess();
-}, 1000);
+}, 200);
 
 setTimeout( async () =>{
     // init error
     // const rssReaderFacts = new ReadRss();
     const rssReaderFacts = new ReadRss(Facts);
     await rssReaderFacts.dataProcess();
-}, 2000);
+}, 300);
 
 setTimeout( async () =>{
     // error free
     const rssReaderKorrespondent = new ReadRss(Korrespondent);
     await rssReaderKorrespondent.dataProcess();
-}, 3000);
-
+}, 400);
 
 
 console.log('finish code here');

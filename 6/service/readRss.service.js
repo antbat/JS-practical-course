@@ -35,22 +35,26 @@ class ReadRss {
     }
     async _getDataFromExternalSource(){
         return new Promise((resolve, reject) => {
-            request.get({
+            const settings = {
                 url:this.url, 
-                encoding:this.encoding
-            },(error, data,  body)=>{
+                encoding:null
+            };
+            const callback = (error, data,  body)=>{
                 if(error){
                     reject(error);
                     console.log('this is GET DATA from RSS error');
                     console.log(error);
                 } else {
                     const xml = data.body;
-                    var bodyWithCorrectEncoding = iconv.decode(body, 'windows-1251');
+                    const encoding = this.encoding;
+                    var bodyWithCorrectEncoding = iconv.decode(body, encoding);
                     console.log(bodyWithCorrectEncoding);
                     console.dir(xml);
                     resolve(xml);
                 }
-            });
+            };
+
+            request.get(settings, callback);
         });    
     }
 
