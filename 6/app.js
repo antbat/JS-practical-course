@@ -49,6 +49,7 @@ setTimeout( async () =>{
     await rssReaderTyzhden.dataProcess();
 }, 10);
 
+
 setTimeout( async () =>{
     // URLS error
     const rssReaderFinance = new ReadRss(Finance);
@@ -62,12 +63,14 @@ setTimeout( async () =>{
     await rssReaderRBK.dataProcess();
 }, 200);
 
+
 setTimeout( async () =>{
     // init error
     // const rssReaderFacts = new ReadRss();
     const rssReaderFacts = new ReadRss(Facts);
     await rssReaderFacts.dataProcess();
 }, 300);
+
 
 setTimeout( async () =>{
     // error free
