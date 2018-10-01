@@ -14,6 +14,7 @@ const Facts = require('./RSS/Facts/facts.settings');
 const Finance = require('./RSS/Finance/finance.settings');
 const Tyzhden = require('./RSS/Tyzhden/tyzhden.settings');
 
+
 const mongoose = require('mongoose');
 mongoose.connect(mongodb.connection);
 
@@ -54,24 +55,24 @@ setTimeout( async () =>{
     await rssReaderFinance.dataProcess();
 }, 100);
 
-// setTimeout( async () =>{
-//     // URLS error
-//     const rssReaderRBK = new ReadRss(RBK);
-//     await rssReaderRBK.dataProcess();
-// }, 1000);
+setTimeout( async () =>{
+    // URLS error
+    const rssReaderRBK = new ReadRss(RBK);
+    await rssReaderRBK.dataProcess();
+}, 1000);
 
-// setTimeout( async () =>{
-//     // init error
-//     // const rssReaderFacts = new ReadRss();
-//     const rssReaderFacts = new ReadRss(Facts);
-//     await rssReaderFacts.dataProcess();
-// }, 2000);
+setTimeout( async () =>{
+    // init error
+    // const rssReaderFacts = new ReadRss();
+    const rssReaderFacts = new ReadRss(Facts);
+    await rssReaderFacts.dataProcess();
+}, 2000);
 
-// setTimeout( async () =>{
-//     // error free
-//     const rssReaderKorrespondent = new ReadRss(Korrespondent);
-//     await rssReaderKorrespondent.dataProcess();
-// }, 3000);
+setTimeout( async () =>{
+    // error free
+    const rssReaderKorrespondent = new ReadRss(Korrespondent);
+    await rssReaderKorrespondent.dataProcess();
+}, 3000);
 
 
 
