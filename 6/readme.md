@@ -39,6 +39,11 @@ October 1, Homework:
 4) run your app on Heroku NodeJS (AWS)
 # RSS reader
 
+October 2, Homework
+1) сделать приложение работающим. Использовать в настройках кодировку.
+2) запустить на Heroku со всеми источниками и с различной кодировкой. (отдельным репозиторием, не внутри курса).
+3) добавьте в settings функцию, которая бы обрабатывала  articles оптимальным образом (используя особенности конкретного источника). ковертор из формата истоника в наш внутренний формат.
+
 RSS data sources:
 * https://www.rbc.ua/static/rss/all.rus.rss.xml
 * https://fakty.ua/rss_feed/all
