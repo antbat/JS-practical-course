@@ -1,2 +1,16 @@
+<<<<<<< .merge_file_a04364
 /**/node_modules/
 .idea/
+=======
+/**/node_modules
+.idea
+.vscode/launch.json
+1/launch.jsons
+2/launch.json
+3/launch.json
+3/mainApp_REMOTE_9548.js
+3/mainApp_LOCAL_9548.js
+3/mainApp_BASE_9548.js
+3/mainApp_BACKUP_9548.js
+node_modules.1/
+>>>>>>> .merge_file_a19924
