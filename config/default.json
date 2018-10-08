@@ -1,6 +1,6 @@
 {
     "port": 3010,
     "mongodb": {
-        "connection": "mongodb://localhost/rss"
+        "connection": "mongodb://eugene:Maine186@ds115523.mlab.com:15523/rss_db"
     }
 }

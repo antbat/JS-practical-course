@@ -1,4 +1,4 @@
-
+const iconv = require('iconv-lite');
 const request = require('request');
 const parseString = require('xml2js').parseString;
 const Article = require('./../model/article.model');
@@ -34,20 +34,28 @@ class ReadRss {
     }
     async _getDataFromExternalSource(){
         return new Promise((resolve, reject) => {
-            request.get(this.url, (error, data) => {
-                // error handling
+            const settings = {
+                url: this.url,
+                encoding: null
+            };
+            const callback = (error, data, body) => {
                 if(error){
                     reject(error);
                     console.log('this is GET DATA from RSS error');
                     console.log(error);
+                
                 } else {
                     const xml = data.body;
-                    // console.dir(xml);
+                    const encoding = this.encoding;
+                    var correctEncodingForXML = iconv.decode(body, encoding);
+                    // console.log(correctEncodingForXML);
+                    console.dir(xml);
                     resolve(xml);
                 }
-            });
+            };
+            request.get(settings, callback);
         });
-    }
+    }   
 
     async _parseToJson(data){
         return new Promise( (resolve, reject) => {
