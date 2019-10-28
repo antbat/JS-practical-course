@@ -24,12 +24,21 @@ class Generator{
         this.accuracy = decimalPlaces * 10;
     }
     generateData(size){
-        const hugeData = [];
+           const hugeData = [];
         for(let i=0; i<size; i++){
             hugeData.push(_random());
         }
+        
         return hugeData;
+        
+        // var _random = () => {
+        //     const a = Math.random() * this.max + this.min;
+        //     const b = Math.round(a * this.accuracy);
+        //     return b;
+        // }
 
+        
+        
         function _random() {
             const a = Math.random() * this.max + this.min;
             const b = Math.round(a * this.accuracy) / this.accuracy

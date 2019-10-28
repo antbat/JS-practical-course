@@ -3,9 +3,9 @@
     This array must be generated from random 0...1000 and print duration (sec)
 */
 
-const min = 5;
+const min = 0;
 const max = 1000;
-const size = 10000000;
+const size = 1000000;
 
 class Timer {
     constructor(isSeconds){
@@ -37,12 +37,33 @@ function generateRandomArray(size, min, max){
     function randomElement(min, max){
         return Math.round(Math.random() * max * 100 + min) / 100;
     }
+    
+    
+    
+}
+// 'use strict'
+//HOW DO I DO THIS
+function compareAb(a, b){
+    return a - b;
+}
+let Filtre = class Compare {
+    Co
+}(a, b) { a - b;} 
+
+function getTop10() {
+    const sortedArr = randomArray.sort(compareAb);
+    const top10 = [];
+    for (let i = sortedArr.length - 1; i>= (sortedArr.length-10); i--) {
+        top10.push(sortedArr[i]);
+    }
+    return top10;
 }
 
 try {
     timerSeconds.start();
     timerMilliseconds.start();
     const data = generateRandomArray(size, min, max);
+    const top10Here = getTop10();
     timerSeconds.finish();
     timerMilliseconds.finish();
 
@@ -50,6 +71,3 @@ try {
 } catch(err){
     console.error(err);
 }
-
-
-

@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+        "type": "node",
+            "request": "launch",
+            "name": "HOMEWORK 3 Unit app",
+            "program": "${workspaceFolder}/3/App2_hw.js"
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "Launch 1 Unit app",
@@ -19,14 +25,21 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "L. Obj 2 Unit app",
+            "program": "${workspaceFolder}/2/obj.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Launch 3 Unit app",
-            "program": "${workspaceFolder}/3/app2.js"
+            "program": "${workspaceFolder}/3/app2_hw.js"
         },
         {
             "type": "node",
             "request": "launch",
             "name": "Launch Pilot",
             "program": "${workspaceFolder}/pilot/app.js"
+
         },
         {
             "type": "node",
@@ -45,6 +58,12 @@
             "request": "launch",
             "name": "CallBack app ( Anton)",
             "program": "${workspaceFolder}/4/callback.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Promises app ( Evgen)",
+            "program": "${workspaceFolder}/4/Promises_examples.js"
         }
     ]
 }

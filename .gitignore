@@ -1,2 +1,9 @@
+<<<<<<< HEAD
+/**/node_modules
+.idea
+/1
+/2
+=======
 /**/node_modules/
 .idea/
+>>>>>>> b2e4fe7196a9b58dee66f89fffd5fbb517995952
